@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Muñeco de nieve</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  </head>
+  <body>
+    <script>
+      function setup() {
+        createCanvas(400, 400);
+
+        // Fondo y suelo
+        background(21, 198, 214);
+        fill(33, 224, 135);
+        rect(0, 300, 400, 100);
+
+        // Sol
+        fill(255, 247, 0);
+        ellipse(80, 64, 100, 100);
+
+        // Muñeco de nieve
+        fill(237, 232, 232);
+        ellipse(200, 300, 150, 150);
+        ellipse(200, 200, 100, 100);
+        ellipse(200, 120, 75, 75);
+      }
+    </script>
+  </body>
+</html>
