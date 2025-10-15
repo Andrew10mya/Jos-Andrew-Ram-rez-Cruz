@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Estrellas en movimiento</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  </head>
+  <body>
+    <script>
+      // Variables iniciales
+      let xPos = 250;
+      let yPos = 280;
+      let estrellax = 50;
+      let estrellay = 350;
+
+      function setup() {
+        createCanvas(400, 400);
+      }
+
+      function draw() {
+        background(4, 10, 51); // cielo oscuro
+
+        // Estrella amarilla
+        fill(255, 242, 0);
+        ellipse(xPos, yPos, 10, 10);
+        xPos += 1;
+        yPos -= 1;
+
+        // Estrella blanca
+        fill(255);
+        ellipse(estrellax, estrellay, 12, 12);
+        estrellax += 2;
+        estrellay -= 2;
+
+        // Reinicio de posiciones (cuando salen del lienzo)
+        if (xPos > width || yPos < 0) {
+          xPos = 250;
+          yPos = 280;
+        }
+
+        if (estrellax > width || estrellay < 0) {
+          estrellax = 50;
+          estrellay = 350;
+        }
+      }
+    </script>
+  </body>
+</html>
