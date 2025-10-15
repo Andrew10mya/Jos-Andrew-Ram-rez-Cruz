@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Plato de comida</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  </head>
+  <body>
+    <script>
+      function setup() {
+        createCanvas(400, 400);
+
+        background(186, 145, 20); // mesa de madera
+
+        stroke(0);
+        strokeWeight(2);
+        ellipse(200, 200, 350, 350); // plato exterior
+        ellipse(200, 200, 300, 300); // plato interior
+
+        // -- COMIDA ---
+        fill(150, 60, 60);
+        rect(100, 250, 180, 25);
+        rect(100, 220, 190, 20);
+
+        fill(255);
+        ellipse(200, 200, 100, 120);
+
+        fill(255, 200, 0);
+        ellipse(200, 200, 45, 45);
+      }
+    </script>
+  </body>
+</html>
