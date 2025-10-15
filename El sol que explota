@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sol en movimiento</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  </head>
+  <body>
+    <script>
+      let sunSize = 20;
+
+      function setup() {
+        createCanvas(400, 400);
+      }
+
+      function draw() {
+        background(82, 222, 240); // cielo
+        fill(255, 204, 0); // sol
+        ellipse(200, 298, sunSize, sunSize); // sol en crecimiento
+        sunSize = sunSize + 1; // el sol crece
+
+        fill(76, 168, 67); // pasto
+        rect(0, 300, 400, 100);
+
+        // Reiniciar el tamaño si se hace muy grande
+        if (sunSize > 400) {
+          sunSize = 20;
+        }
+      }
+    </script>
+  </body>
+</html>
