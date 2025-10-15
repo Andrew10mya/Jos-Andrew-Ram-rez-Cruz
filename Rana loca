@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rana divertida</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  </head>
+  <body>
+    <script>
+      function setup() {
+        createCanvas(400, 400);
+        background(180, 230, 255); // cielo azul claro
+
+        let x = 200;
+        let y = 250;
+
+        noStroke();
+        fill(35, 158, 78); // verde rana
+        ellipse(x, y, 200, 100); // cara
+        ellipse(x - 50, y - 50, 40, 40); // ojo izquierdo (zona verde)
+        ellipse(x + 50, y - 50, 40, 40); // ojo derecho (zona verde)
+
+        fill(255); // blanco de los ojos
+        ellipse(x - 50, y - 50, 30, 30); // ojo blanco izquierdo
+        ellipse(x + 50, y - 50, 30, 30); // ojo blanco derecho
+
+        // Boca
+        fill(0);
+        ellipse(x, y, 100, 80);
+
+        // Pupilas (cuadradas)
+        fill(0);
+        rect(x - 55, y - 55, 10, 10); // pupila izquierda
+        rect(x + 45, y - 55, 10, 10); // pupila derecha
+      }
+    </script>
+  </body>
+</html>
