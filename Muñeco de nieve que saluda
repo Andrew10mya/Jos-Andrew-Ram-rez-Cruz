@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mi dibujo</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  </head>
+  <body>
+    <script>
+      function setup() {
+        createCanvas(400, 400);
+        background(220);
+
+        rect(0, 300, 400, 100);
+        ellipse(200, 300, 150, 150);
+        ellipse(200, 200, 100, 100);
+        ellipse(200, 120, 75, 75);
+        line(150, 200, 100, 150);
+        line(250, 200, 300, 150);
+      }
+    </script>
+  </body>
+</html>
