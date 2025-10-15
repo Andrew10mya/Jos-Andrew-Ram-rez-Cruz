@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cara divertida</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  </head>
+  <body>
+    <script>
+      function setup() {
+        createCanvas(400, 400);
+        background(220);
+
+        let eyesize = 15;
+        let diente = 15;
+
+        // Orejas
+        ellipse(150, 70, 60, 120);  // oreja izquierda
+        ellipse(240, 70, 60, 120);  // oreja derecha
+
+        // Cara
+        ellipse(200, 170, 150, 150);
+
+        // Ojos
+        fill(0);
+        ellipse(170, 150, eyesize, eyesize);  // ojo izquierdo
+        ellipse(230, 150, eyesize, eyesize);  // ojo derecho
+
+        // Boca
+        stroke(0);
+        line(150, 200, 250, 200);
+
+        // Dientes
+        noFill();
+        rect(185, 200, 15, diente); // diente izquierdo
+        rect(200, 200, 15, diente); // diente derecho
+      }
+    </script>
+  </body>
+</html>
